@@ -92,9 +92,9 @@ formatted_english = '\033[92m{}\033[0m\n\033[92m{}\033[0m\n{}'.format(english_te
 # طباعة النصوص المنسقة
 print(formatted_arabic)
 print(formatted_english)
-code_post=input("ادخل كود المنشور: ")
+code_post=input("Enter Code: ")
 data = {
-    "signed_body": "SIGNATURE.{\"jazoest\":\"22327\",\"country_codes\":\"[{\\\"country_code\\\":\\\"964\\\",\\\"source\\\":[\\\"sim\\\"]},{\\\"country_code\\\":\\\"20\\\",\\\"source\\\":[\\\"default\\\"]}]\",\"phone_id\":\"ac7f2c7c-04f1-4452-b9f1-938c345e3471\",\"enc_password\":\"#PWD_INSTAGRAM:0:1701358983:بببببب\",\"username\":\"ييييييي\",\"adid\":\"76bd4ebd-7bd0-4428-9545-90ee00a1d626\",\"guid\":\"ea773184-7663-4e32-8c38-c8180cf5827f\",\"device_id\":\"android-fe2ca0b5d8b6ce3c\",\"google_tokens\":\"[]\",\"login_attempt_count\":\"0\"}".replace("بببببب",ps).replace("ييييييي",us)
+    "signed_body": "SIGNATURE.{\"jazoest\":\"22327\",\"country_codes\":\"[{\\\"country_code\\\":\\\"\\\",\\\"source\\\":[\\\"sim\\\"]},{\\\"country_code\\\":\\\"20\\\",\\\"source\\\":[\\\"default\\\"]}]\",\"phone_id\":\"ac7f2c7c-04f1-4452-b9f1-938c345e3471\",\"enc_password\":\"#PWD_INSTAGRAM:0:1701358983:بببببب\",\"username\":\"ييييييي\",\"adid\":\"76bd4ebd-7bd0-4428-9545-90ee00a1d626\",\"guid\":\"ea773184-7663-4e32-8c38-c8180cf5827f\",\"device_id\":\"android-fe2ca0b5d8b6ce3c\",\"google_tokens\":\"[]\",\"login_attempt_count\":\"0\"}".replace("بببببب",ps).replace("ييييييي",us)
 }
 
 
@@ -344,7 +344,6 @@ usernames_list = []
 
 
 if response.status_code == 200:
-    print("تم تجسيل دخول")
     id_post = get_id_post()
     response1 = req_Grt_user()
     print(response1)
@@ -368,14 +367,3 @@ if response.status_code == 200:
             for itme_id in list_id_ators:
                 status_code = send_like(itme_id)
                 send_like(itme_id)
-
-
-
-
-
-
-
-
-
-
-
