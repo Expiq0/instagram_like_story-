@@ -1,4 +1,6 @@
 import json
+from time import sleep
+
 import instaloader
 from instaloader import *
 import requests
@@ -365,5 +367,6 @@ if response.status_code == 200:
             print(f"The account @{ittt} is public.")
             list_id_ators = get_id_store(id_so=get_id(ittt))
             for itme_id in list_id_ators:
+                sleep(20)
                 status_code = send_like(itme_id)
                 send_like(itme_id)
